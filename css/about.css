@@ -1,0 +1,16 @@
+.Roko{
+	position: absolute;
+	z-index: 31;
+	width: 90%;
+	margin: 0 5%;
+}
+
+.r-about{
+	text-align: center;
+}
+
+.r-about h3{
+	margin: 50px 0;
+	font-size: 31px;
+}
+

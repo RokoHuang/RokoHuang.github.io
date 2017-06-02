@@ -1,0 +1,36 @@
+.Roko{
+	position: absolute;
+	z-index: 31;
+	width: 90%;
+	margin: 0 5%;
+}
+
+.r-photoName{
+	width: 100%;
+	margin: 210px 0 0 0;
+	text-align: center;
+}
+.r-photoName img{
+	width: 120px;
+	height: 120px; 
+	border-radius: 50%;
+	border: 1px solid rgba(0,0,0,.2);
+	box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+.r-photoName h3{
+	color: #000;
+	font-size: 31px;
+}
+
+.r-nav{
+	text-align: center;
+	margin-top: 100px;
+}
+.r-nav li{
+	width: 20%;
+	display: inline-block;
+}
+.r-nav li a{
+	color: #000;
+	font-size: 21px;
+}
