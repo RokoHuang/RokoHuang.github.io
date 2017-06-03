@@ -29,6 +29,7 @@
 .r-nav li{
 	width: 20%;
 	display: inline-block;
+	cursor: pointer;
 }
 .r-nav li a{
 	color: #000;

@@ -20,8 +20,9 @@
 				<h3>Roko</h3>
 			</div>
 			<div class="r-nav">
-				<li><a href="./index.html">首页</a></li>	
-				<li><a href="./about.html">关于</a></li>	
+				<li onclick="toast();">首页</li>
+				<li onclick="toast();">文章</li>
+				<li><a href="./about.html">关于</a></li>
 			</div>
 		</div>
 
@@ -33,7 +34,7 @@
 		<script src="./js/stats.min.js"></script>
 
 		<script>
-
+			
 			var container, stats;
 			var camera, scene, renderer;
 
@@ -187,6 +188,11 @@
 
 				renderer.render( scene, camera );
 
+			}
+			
+			
+			function toast(){
+				alert("由于墙的原因,加载速度慢,此页面已被迁移...")
 			}
 
 		</script>
