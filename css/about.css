@@ -1,16 +1,67 @@
-.Roko{
+.Roko {
 	position: absolute;
 	z-index: 31;
 	width: 90%;
 	margin: 0 5%;
 }
 
-.r-about{
+.r-about {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.r-about>h3 {
+	text-align: center;
+	margin: 25px 0;
+	font-size: 28px;
+}
+
+.r-int li span {
+	display: inline-block;
+	width: 260px;
+	font-size: 16px;
+	line-height: 42px;
+}
+
+.r-int>img {
+	float: right;
+	margin-right: 30px;
+}
+
+.r-margin {
+	margin-top: 30px;
+}
+
+.r-edu div {
+	padding: 5px 0 3px 10px;
+	border-left: 5px solid #548DD4;
+	background-color: #DBE5F1;
+	font-size: 18px;
+}
+
+.r-edu li {
+	font-size: 16px;
+	padding: 0 20px;
+}
+
+.r-edu li span {
+	display: inline-block;
+	font-size: 16px;
+	width: 300px;
 	text-align: center;
 }
 
-.r-about h3{
-	margin: 50px 0;
-	font-size: 31px;
+.r-edu li span:first-child {
+	text-align: left;
+	padding: 15px 0;
 }
 
+.r-edu li h3 {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.r-edu li p {
+	font-size: 16px;
+	text-indent: 2em;
+}

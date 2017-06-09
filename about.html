@@ -16,7 +16,100 @@
 		
 		<div class="Roko">
 			<div class="r-about">
-				<h3>关于我</h3>
+				<h3>黄浩简历</h3>
+				<div class="r-int">
+					<img src="img/Roko (2).png"/>
+					<li>
+						<span>性别：男</span>
+						<span>年龄：24岁</span>
+					</li>
+					<li>
+						<span>教育情况： 大专</span>
+						<span>联系方式：15207536467</span>
+					</li>
+					<li>
+						<span>邮箱：389466933@qq.com</span>
+						<span>政治面貌：团员</span>
+					</li>
+				</div>
+				<div class="r-edu r-margin">
+					<div>教育背景</div>
+					<li>
+						<span>广东省河源职业技术学院</span>
+						<span>计算机网络技术</span>
+						<span>2012.09 - 2015.06</span>
+					</li>
+				</div>
+				<div class="r-edu">
+					<div>求职意向</div>
+					<li>
+						<span>web前端</span>
+					</li>
+				</div>
+				<div class="r-edu">
+					<div>工作经历</div>
+					<li>
+						<span>广州优蚁公学网络科技有限公司</span>
+						<span>web前端</span>
+						<span> 2015.03 - 2016.07</span>
+					</li>
+					<li>
+						<span>广州凌扣网络科技有限公司</span>
+						<span>web前端</span>
+						<span> 2016.07 - 2017.06</span>
+					</li>
+				</div>
+				<div class="r-edu">
+					<div>项目经验</div>
+					<li style="padding: 10px 20px;">
+						<h3>项目(1)描述:</h3>
+						<p>本项目是关于海外留学网站网页的开发，提供国人出国留学。项目主打是留学点评。</p>
+						<h3>项目职责:</h3>
+							<p>前端开发工程师</p>
+						<h3>负责:</h3>
+						<p>1.PC页面的前端开发（技术:html5、css3、javascript、jQuery、ajax）</p>
+						<p>2.手机网页页面开发（技术:bootstrap）</p>
+						<p>3.app蚂蚁留学开发（技术:Dcloud   mui、html5+、javascript）</p>
+						<p>4.了解node.js</p>
+					</li>
+					<li style="padding: 10px 20px;">
+						<h3>项目(2)描述:</h3>
+						<p>本项目是音乐教育平台，负责线上线下预约名师，名师直播教学，录播教学。咨询音乐考级等服务。</p>
+						<h3>项目职责:</h3>
+							<p>前端开发工程师</p>
+						<h3>负责:</h3>
+						<p>负责pc和移动端页面重构及交互(用及技术：HTML5、CSS3、less、javascript、jQuery、Knockout、Gulp、熟悉Vue.js)</p>
+					</li>
+					<li style="padding: 10px 20px;">
+						<h3>项目(3)描述:</h3>
+						<p>在微信端(微信小程序)提供方便学生考级咨询、考级报名及考级题试测试(用及技术：wxml、wxcs等)</p>
+						<h3>项目职责:</h3>
+							<p>前端开发工程师</p>
+						<h3>负责:</h3>
+						<p>负责页面重构及数据交互。</p>
+					</li>
+				</div>
+				<div class="r-edu">
+					<div>其他技能</div>
+					<li style="padding: 10px 20px;">
+						普通话，粤语一般<br />
+						计算机英语中级证书<br />
+						全国计算机信息高新技术办公软件应用模块（Windows平台Office系列）操作员级（国家职业资格四级）<br />
+						全国计算机等级一级<br />
+
+					</li>
+				</div>
+				<div class="r-edu">
+					<div>自我评价</div>
+					<li style="padding: 10px 20px;">
+						自学能力、解决问题能力强。<br />
+						热爱编程并且每天坚持学习编程语言一小时以上（业余时间）。<br />
+						性格开朗，善于与团队沟通协调。<br />
+						热爱运动（跑步、羽毛球、篮球）。<br />
+
+
+					</li>
+				</div>
 			</div>
 		</div>
 		
@@ -72,7 +165,7 @@
 				info.innerHTML = '';
 				container.appendChild( info );
 
-				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 10000 );
+				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / document.body.scrollHeight, 1, 10000 );
 				camera.position.set( 0, 3000, 5000 );
 
 				scene = new THREE.Scene();
@@ -96,7 +189,7 @@
 				renderer = new THREE.CanvasRenderer();
 				renderer.setClearColor( 0xf0f0f0 );
 				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( window.innerWidth, document.body.scrollHeight );
 				container.appendChild( renderer.domElement );
 
 				stats = new Stats();
@@ -112,10 +205,10 @@
 
 			function onWindowResize() {
 
-				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.aspect = window.innerWidth / document.body.scrollHeight;
 				camera.updateProjectionMatrix();
 
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( window.innerWidth, document.body.scrollHeight );
 
 			}
 
@@ -124,7 +217,7 @@
 				event.preventDefault();
 
 				mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-				mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+				mouse.y = - ( event.clientY / document.body.scrollHeight ) * 2 + 1;
 
 			}
 
